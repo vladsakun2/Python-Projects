@@ -14,9 +14,11 @@ def num_1():
     b = np.matrix([[2, -3],
                    [-4, 1]])
 
+    # множення матриць
     ab = np.dot(a, b)
     ba = np.dot(b, a)
 
+    # вычитание матриц
     print(np.subtract(ab, ba))
 
 

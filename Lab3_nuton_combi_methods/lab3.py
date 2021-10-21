@@ -28,9 +28,7 @@ def nuton_method(a, b, e):
     h = f(x) / f_1(x)
     x = x - h
 
-    if abs(h) <= e:
-        print(f(x))
-    else:
+    while abs(h) <= e:
         h = f(x) / f_1(x)
         x = x - h
 

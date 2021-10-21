@@ -42,4 +42,23 @@ def compute_n(x, accuracy):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    exercise_1()
+    a = 1
+
+    b = 2
+
+    c = 3
+
+    d = 4
+
+    e = 5
+
+    if a >= b >= c >= d >= e:
+        print("The biggest number: ", str(a))
+    elif b >= c >= a >= d >= e:
+        print("The biggest number: ", str(b))
+    elif c >= b >= a >= d >= e:
+        print("The biggest number: ", str(c))
+    elif d >= a >= b >= c >= e:
+        print("The biggest number: ", str(d))
+    elif e >= a >= b >= c >= d:
+        print("The biggest number: ", str(e))
