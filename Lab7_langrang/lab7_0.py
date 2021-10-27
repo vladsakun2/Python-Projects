@@ -12,6 +12,11 @@ def drawPlot(x1, x2):
     t = linspace(x1, x2, 100)
     y = f(t)
     plt.plot(t, y)
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.title('Sakun Vlad #23')
+    plt.legend(['Y(x)=cos(x^4)/x'], loc='upper left')
+    plt.grid(True)
     plt.show()
 
 

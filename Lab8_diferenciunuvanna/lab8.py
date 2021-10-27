@@ -4,12 +4,15 @@
 # Числове диференціювання
 
 # Умова
-x = [2.4, 2.6, 2.8, 3.0, 3.2, 3.4]
-y = [3.526, 3.782, 3.945, 4.043, 4.104, 4.155]
+import decimal
+
+x = [0.15, 0.20, 0.25, 0.30, 0.35, 0.40]
+y = [0.8607, 0.8187, 0.7788, 0.7408, 0.7046, 0.6703]
 
 # Крок таблиці
 h = x[1] - x[0]
 
+decimal.getcontext().prec = 20
 
 def nuton():
     delta_y = delta_fun(y)
@@ -37,7 +40,7 @@ def nuton():
 def delta_fun(prev_delta_y):
     delta_y = []
     for i in range(1, len(prev_delta_y)):
-        delta_y.append(prev_delta_y[i] - prev_delta_y[i - 1])
+        delta_y.append(decimal.Decimal(prev_delta_y[i]) - decimal.Decimal(prev_delta_y[i - 1]))
     return delta_y
 
 
