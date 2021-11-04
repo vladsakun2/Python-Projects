@@ -1,12 +1,12 @@
 # @copyright Сакун Владислав Олександрович ФІТ 2-4
-# Лабораторна №7
+# Лабораторна №7 варіант 23
 
 from numpy import *
 from scipy.interpolate import lagrange
 import matplotlib.pyplot as plt
 
-x = array([-2, 0, 1, 2], dtype=float)
-y = array([30, -4, 3, 18], dtype=float)
+x = array([-2, 0, 2, 4], dtype=float)
+y = array([-5, 1, -9, 13], dtype=float)
 
 
 def defaultPlotConfings():
